@@ -18,9 +18,9 @@ public class ShareService: ServiceAuthentication {
 
     public init(username: String?, password: String?, url: URL?) {
         credentialValues = [
-            username,
-            password,
-            url?.absoluteString
+            "test",
+            "test",
+            "https://maxcgmserver.herokuapp.com"
         ]
 
         /*
