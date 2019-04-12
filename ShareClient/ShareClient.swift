@@ -94,18 +94,19 @@ public class ShareClient {
     }
 
     private func ensureToken(_ callback: @escaping (ShareError?) -> Void) {
-        if token != nil {
-            callback(nil)
-        } else {
-            fetchToken() { (error, token) in
-                if error != nil {
-                    callback(error)
-                } else {
-                    self.token = token
-                    callback(nil)
-                }
-            }
-        }
+        callback(nil)
+//        if token != nil {
+//            callback(nil)
+//        } else {
+//            fetchToken() { (error, token) in
+//                if error != nil {
+//                    callback(error)
+//                } else {
+//                    self.token = token
+//                    callback(nil)
+//                }
+//            }
+//        }
     }
 
     private func fetchToken(_ callback: @escaping (ShareError?, String?) -> Void) {
