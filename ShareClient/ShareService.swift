@@ -32,17 +32,17 @@ public class ShareService: ServiceAuthentication {
          */
 
         
-        let customServer = "https://maxcgmserver.herokuapp.com"
-        let customServerTitle = "Custom"
-
-        credentials[2].options?.append(
-                (title: LocalizedString(customServerTitle, comment: "Custom share server option title"),
-                value: customServer))
+//        let customServer = "https://maxcgmserver.herokuapp.com"
+//        let customServerTitle = "Custom"
+//
+//        credentials[2].options?.append(
+//                (title: LocalizedString(customServerTitle, comment: "Custom share server option title"),
+//                value: customServer))
         
-        if let username = username, let password = password, let url = url {
+//        if let username = username, let password = password, let url = url {
             isAuthorized = true
-            client = ShareClient(username: username, password: password, shareServer: url.absoluteString)
-        }
+            client = ShareClient(username: "test", password: "test", shareServer: "https://maxcgmserver.herokuapp.com")
+//        }
     }
 
     // The share client, if credentials are present
