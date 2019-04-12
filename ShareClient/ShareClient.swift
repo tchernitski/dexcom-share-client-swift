@@ -29,7 +29,7 @@ public enum ShareError: Error {
 
 public enum KnownShareServers: String {
     case US="https://maxcgmserver.herokuapp.com"
-    case NON_US="https://maxcgmserver.herokuapp.com"
+    case NON_US="https://shareous1.dexcom.com"
 
 }
 
